@@ -1,0 +1,46 @@
+{
+  "name": "battis/phpunit-extensions",
+  "description": "Extensions for PHPUnit",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Seth Battis",
+      "email": "seth@battis.net"
+    }
+  ],
+  "require": {
+    "battis/hydratable": "^0.1",
+    "php": "^7.2",
+    "phpunit/phpunit": "^10.0",
+    "symfony/dependency-injection": "^5.0",
+    "symfony/http-kernel": "^5.0",
+    "symfony/yaml": "^5.0"
+  },
+  "require-dev": {
+    "battis/data-utilities": "^1.1",
+    "symplify/monorepo-builder": "^11.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Battis\\PHPUnit\\PDO\\": "packages/pdo/src",
+      "Battis\\PHPUnit\\Sessions\\": "packages/sessions/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Battis\\PHPUnit\\PDO\\Tests\\": "packages/pdo/tests",
+      "Battis\\PHPUnit\\Sessions\\Tests\\": "packages/sessions/tests/"
+    }
+  },
+  "replace": {
+    "battis/phpunit-pdo": "self.version",
+    "battis/phpunit-sessions": "self.version"
+  },
+  "scripts": {
+    "docs": "docker run --rm -v $(pwd):/data phpdoc/phpdoc:3",
+    "test": "XDEBUG_MODE=coverage ./tools/phpunit --coverage-text --coverage-html=coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
