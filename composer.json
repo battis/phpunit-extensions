@@ -37,7 +37,10 @@
     "battis/phpunit-sessions": "self.version"
   },
   "scripts": {
-    "docs": "docker run --rm -v $(pwd):/data phpdoc/phpdoc:3",
+    "docs": [
+      "rm -rf docs/latest/*",
+      "docker run --rm -v $(pwd):/data phpdoc/phpdoc:3 --config docs/phpdoc.dist.xml"
+    ],
     "test": "XDEBUG_MODE=coverage ./tools/phpunit --coverage-text --coverage-html=coverage"
   },
   "config": {
