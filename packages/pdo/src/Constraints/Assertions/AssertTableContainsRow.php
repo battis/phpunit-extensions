@@ -8,6 +8,9 @@ use Battis\PHPUnit\PDO\Fixture\Table;
 use PDO;
 use PHPUnit\Framework\Assert;
 
+/**
+ * @package battis\phpunit-pdo
+ */
 trait AssertTableContainsRow
 {
     public static function assertTableContainsRow(

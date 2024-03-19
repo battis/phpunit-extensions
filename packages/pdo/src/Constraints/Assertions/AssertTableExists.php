@@ -7,6 +7,9 @@ use Battis\PHPUnit\PDO\Fixture\Table;
 use PDO;
 use PHPUnit\Framework\Assert;
 
+/**
+ * @package battis\phpunit-pdo
+ */
 trait AssertTableExists
 {
     public static function assertTableExists(Table $needle, PDO $haystack): void
@@ -14,8 +17,10 @@ trait AssertTableExists
         Assert::assertThat($needle, new TableExists($haystack));
     }
 
-    public static function assertTableDoesNotExist(Table $needle, PDO $haystack): void
-    {
+    public static function assertTableDoesNotExist(
+        Table $needle,
+        PDO $haystack
+    ): void {
         Assert::assertThat(
             $needle,
             Assert::logicalNot(new TableExists($haystack))

@@ -8,6 +8,8 @@ use PDO;
 
 /**
  * @extends Base<string, Column, string>
+ *
+ * @package battis\phpunit-pdo
  */
 class Row extends Base
 {

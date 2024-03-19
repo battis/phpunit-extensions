@@ -2,6 +2,9 @@
 
 namespace Battis\PHPUnit\PDO\Fixture;
 
+/**
+ * @package battis\phpunit-pdo
+ */
 class Column
 {
     private string $name;

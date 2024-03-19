@@ -15,6 +15,8 @@ use Symfony\Component\Yaml\Yaml;
  * @template TypeAccessed
  * @implements ArrayAccess<TypeKey, TypeAccessed>
  * @implements Iterator<TypeKey, TypeAccessed>
+ *
+ * @package battis\phpunit-pdo
  */
 abstract class Base implements ArrayAccess, Iterator, Countable
 {

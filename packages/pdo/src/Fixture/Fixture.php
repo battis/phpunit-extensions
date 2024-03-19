@@ -8,6 +8,8 @@ use PDO;
 
 /**
  * @extends Schema<string, Table, Table>
+ *
+ * @package battis\phpunit-pdo
  */
 class Fixture extends Schema
 {

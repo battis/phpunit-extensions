@@ -7,6 +7,9 @@ use Battis\PHPUnit\PDO\Fixture\Table;
 use PDO;
 use PDOStatement;
 
+/**
+ * @package battis\phpunit-pdo
+ */
 class Query
 {
     /*
@@ -21,7 +24,8 @@ class Query
         $this->sql = $sql;
     }
 
-    public function getStatement(): PDOStatement {
+    public function getStatement(): PDOStatement
+    {
         if ($this->statement) {
             return $this->statement;
         } else {

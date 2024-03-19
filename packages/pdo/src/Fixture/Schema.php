@@ -10,7 +10,10 @@ use PDO;
  * @template TypeKey
  * @template TypeStored
  * @template TypeAccessed
+ *
  * @extends Base<TypeKey, TypeStored, TypeAccessed>
+ *
+ * @package battis\phpunit-pdo
  */
 abstract class Schema extends Base
 {

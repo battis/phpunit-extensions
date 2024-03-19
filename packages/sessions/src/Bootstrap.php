@@ -2,6 +2,9 @@
 
 namespace Battis\PHPUnit\Sessions;
 
+/**
+ * @package battis\phpunit-sessions
+ */
 class Bootstrap
 {
     private function __construct()
@@ -11,7 +14,7 @@ class Bootstrap
     public static function execute(): void
     {
         global $_COOKIE, $_SESSION;
-        if (php_sapi_name() === "cli") {
+        if (php_sapi_name() === 'cli') {
             if (!isset($_COOKIE)) {
                 $_COOKIE = [];
             }

@@ -8,6 +8,9 @@ use Battis\PHPUnit\PDO\Query;
 use PDO;
 use PHPUnit\Framework\Constraint\Constraint;
 
+/**
+ * @package battis\phpunit-pdo
+ */
 class TableContainsRow extends Constraint
 {
     private Table $table;

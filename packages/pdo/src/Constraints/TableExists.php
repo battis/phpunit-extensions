@@ -8,6 +8,9 @@ use Exception;
 use PDO;
 use PHPUnit\Framework\Constraint\Constraint;
 
+/**
+ * @package battis\phpunit-pdo
+ */
 class TableExists extends Constraint
 {
     private PDO $pdo;

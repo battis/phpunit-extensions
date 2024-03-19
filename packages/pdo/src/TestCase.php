@@ -7,6 +7,9 @@ use Battis\PHPUnit\PDO\Constraints\Assertions\AssertTableExists;
 use Battis\PHPUnit\PDO\Traits\Fixture;
 use PHPUnit\Framework\TestCase as FrameworkTestCase;
 
+/**
+ * @package battis\phpunit-pdo
+ */
 abstract class TestCase extends FrameworkTestCase
 {
     use Fixture;

@@ -4,6 +4,9 @@ namespace Battis\PHPUnit\PDO\Traits;
 
 use PDO as GlobalPDO;
 
+/**
+ * @package battis\phpunit-pdo
+ */
 trait PDO
 {
     private static ?GlobalPDO $pdo = null;

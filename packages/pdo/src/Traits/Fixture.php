@@ -5,6 +5,10 @@ namespace Battis\PHPUnit\PDO\Traits;
 use Battis\PHPUnit\PDO\Fixture\Fixture as PDOFixture;
 use Battis\PHPUnit\PDO\Traits\PDO;
 
+/**
+ * @package battis\phpunit-pdo
+ */
+
 trait Fixture
 {
     use PDO;

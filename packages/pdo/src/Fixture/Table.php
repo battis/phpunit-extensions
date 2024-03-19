@@ -7,6 +7,8 @@ use PDO;
 
 /**
  * @extends Schema<int, Row, Row>
+ *
+ * @package battis\phpunit-pdo
  */
 class Table extends Schema
 {
