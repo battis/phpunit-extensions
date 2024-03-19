@@ -1,5 +1,5 @@
 # https://github.com/phpDocumentor/phpDocumentor/issues/2242#issuecomment-1219063851
-name: documentation
+name: phpdocumentor
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-phpdocumentor-
       - name: Build with phpDocumentor
-        run: docker run --rm --volume "$(pwd):/data" phpdoc/phpdoc:3 -vv
+        run: docker run --rm --volume "$(pwd):/data" phpdoc/phpdoc:3 -vv --target docs --cache-folder .cache/phpdoc
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v1
         with:
