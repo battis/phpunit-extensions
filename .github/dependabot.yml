@@ -6,6 +6,9 @@
 version: 2
 updates:
   - package-ecosystem: "composer"
-    directory: "/" # Location of package manifests
+    directories:
+      - "/"
+      - "/packages/pdo"
+      - "/packages/sessions"
     schedule:
       interval: "weekly"
