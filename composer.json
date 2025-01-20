@@ -13,7 +13,7 @@
     "phpunit/phpunit": "^10.0",
     "symfony/dependency-injection": "^5.0",
     "symfony/http-kernel": "^5.0",
-    "symfony/yaml": "^5.0"
+    "symfony/yaml": "^7.2"
   },
   "require-dev": {
     "battis/data-utilities": "^1.1",
