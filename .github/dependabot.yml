@@ -11,4 +11,5 @@ updates:
       - "/packages/pdo"
       - "/packages/sessions"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
+    target-branch: dev
