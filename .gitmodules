@@ -1,0 +1,6 @@
+[submodule "packages/pdo"]
+	path = packages/pdo
+	url = git@github.com:battis/phpunit-extensions.pdo.git
+[submodule "packages/sessions"]
+	path = packages/sessions
+	url = git@github.com:battis/phpunit-extensions.sessions.git
